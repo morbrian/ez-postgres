@@ -34,6 +34,7 @@ docker run -d \
     -e PG_ROOT_PASSWORD=${PG_ROOT_PASSWORD} \
     -e PG_MODE=primary \
     -e PG_PRIMARY_PORT=5432 \
+    -p 5432:5432 \
     --name=${CONTAINER_NAME} \
     --hostname=${CONTAINER_NAME} \
     $CCP_IMAGE_PREFIX/crunchy-postgres:$CCP_IMAGE_TAG

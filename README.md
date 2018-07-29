@@ -12,6 +12,8 @@ Relies heavily on CrunchyData provided container: [https://github.com/CrunchyDat
 
 That step is only required the first time.
 
+The container is mapped to port `5432` on your localhost.
+
   * a container called `postgres` was configured and started.
   * the `./scripts` directory is mounted in the running container at /scripts
   * a database user and database were automatically created.        
